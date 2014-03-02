@@ -7,7 +7,7 @@ import play.api.Play.current
 
 case class Task(id: Long, label: String)
 
-object Task {
+class TaskService {
 
   val task = {
     get[Long]("id") ~
